@@ -21,13 +21,9 @@ from ament_index_python.packages import get_package_prefix
 
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, SetEnvironmentVariable
-from launch.actions import OpaqueFunction
-from launch.substitutions import PathJoinSubstitution
 from launch_pal.include_utils import include_scoped_launch_py_description
-from launch_pal.arg_utils import LaunchArgumentsBase, CommonArgs
+from launch_pal.arg_utils import LaunchArgumentsBase
 from launch_pal.include_utils import include_launch_py_description
-from launch_ros.substitutions import FindPackageShare
-from launch_ros.actions import Node
 
 
 @dataclass(frozen=True)
@@ -36,6 +32,7 @@ class LaunchArguments(LaunchArgumentsBase):
         name='use_sim_time',
         default_value='True',
         description='Use simulation time')
+
 
 def get_model_paths(packages_names):
     model_paths = ''
@@ -94,7 +91,7 @@ def declare_actions(ld: LaunchDescription, launch_args: LaunchArguments):
     ld.add_action(robot_state_publisher)
     ld.add_action(spawn_model)
     ld.add_action(pal_gripper_controllers)
-    # ld.add_action(joint_state_broadcaster_launch)
+    ld.add_action(joint_state_broadcaster_launch)
 
 
 def generate_launch_description():

@@ -34,6 +34,7 @@ class LaunchArguments(LaunchArgumentsBase):
 
     use_sim_time: DeclareLaunchArgument = CommonArgs.use_sim_time
 
+
 def launch_setup(context, *args, **kwargs):
 
     robot_description = {'robot_description': load_xacro(
