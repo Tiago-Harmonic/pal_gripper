@@ -23,4 +23,4 @@ endif()
 
 
 
-ament_auto_package(INSTALL_TO_SHARE gazebo meshes robots urdf)
+ament_auto_package(INSTALL_TO_SHARE gazebo meshes robots urdf ros2_control)
