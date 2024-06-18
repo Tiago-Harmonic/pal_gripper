@@ -2,6 +2,14 @@
 Changelog for package pal_gripper_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* follow gripper ros2 structure
+* add fixed link
+* add ros2_control
+* port to ros2 gazebo.urdf
+* Contributors: Aina Irisarri
+
 3.1.0 (2024-01-18)
 ------------------
 * Merge branch 'tiago-dual' into 'humble-devel'

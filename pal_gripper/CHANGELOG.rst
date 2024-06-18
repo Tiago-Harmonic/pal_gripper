@@ -2,6 +2,9 @@
 Changelog for package pal_gripper
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 3.1.0 (2024-01-18)
 ------------------
 * Merge branch 'tiago-dual' into 'humble-devel'
