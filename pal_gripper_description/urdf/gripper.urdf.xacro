@@ -38,14 +38,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="package://pal_gripper_description/meshes/gripper_link.stl"/>
+        <mesh filename="file://$(find pal_gripper_description)/meshes/gripper_link.stl"/>
       </geometry>
       <material name="White"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="package://pal_gripper_description/meshes/gripper_link_collision.stl"/>
+        <mesh filename="file://$(find pal_gripper_description)/meshes/gripper_link_collision.stl"/>
       </geometry>
     </collision>
   </link>
@@ -64,14 +64,14 @@
     <inertial>
       <origin rpy="0 0 0" xyz="-0.004470 0.010766 -0.121013" />
       <mass value="0.109980" />
-      <inertia ixx="0.000232" ixy="-0.000005" ixz="-0.000032"
+      <!-- <inertia ixx="0.000232" ixy="0.000005" ixz="0.000032"
                iyy="0.000224" iyz="0.000036"
-               izz="0.000029" />
+               izz="0.000029" /> -->
     </inertial>
     <visual>
       <origin rpy="0 0 3.1415" xyz="0 0 0" />
       <geometry>
-        <mesh filename="package://pal_gripper_description/meshes/gripper_finger_link.stl" scale="-1 -1 1"/>
+        <mesh filename="file://$(find pal_gripper_description)/meshes/gripper_finger_link.stl" scale="-1 -1 1"/>
       </geometry>
       <material name="Black"/>
     </visual>
@@ -104,14 +104,14 @@
     <inertial>
       <origin rpy="0 0 0" xyz="-0.004470 0.010766 -0.121013" />
       <mass value="0.109980" />
-      <inertia ixx="0.000232" ixy="-0.000005" ixz="-0.000032"
+      <!-- <inertia ixx="0.000232" ixy="0.000005" ixz="0.000032"
                iyy="0.000224" iyz="0.000036"
-               izz="0.000029" />
+               izz="0.000029" /> -->
     </inertial>
     <visual>
       <origin rpy="0 0 3.1415" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://pal_gripper_description/meshes/gripper_finger_link.stl"/>
+        <mesh filename="file://$(find pal_gripper_description)/meshes/gripper_finger_link.stl"/>
       </geometry>
       <material name="Black"/>
     </visual>
