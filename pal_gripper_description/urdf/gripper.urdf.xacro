@@ -64,9 +64,9 @@
     <inertial>
       <origin rpy="0 0 0" xyz="-0.004470 0.010766 -0.121013" />
       <mass value="0.109980" />
-      <!-- <inertia ixx="0.000232" ixy="0.000005" ixz="0.000032"
-               iyy="0.000224" iyz="0.000036"
-               izz="0.000029" /> -->
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0"
+               iyy="0.0" iyz="0.0"
+               izz="0.0" />
     </inertial>
     <visual>
       <origin rpy="0 0 3.1415" xyz="0 0 0" />
@@ -104,9 +104,9 @@
     <inertial>
       <origin rpy="0 0 0" xyz="-0.004470 0.010766 -0.121013" />
       <mass value="0.109980" />
-      <!-- <inertia ixx="0.000232" ixy="0.000005" ixz="0.000032"
-               iyy="0.000224" iyz="0.000036"
-               izz="0.000029" /> -->
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0"
+               iyy="0.0" iyz="0.0"
+               izz="0.0" />
     </inertial>
     <visual>
       <origin rpy="0 0 3.1415" xyz="0 0 0"/>
