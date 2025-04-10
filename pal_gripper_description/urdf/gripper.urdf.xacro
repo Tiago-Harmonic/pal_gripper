@@ -91,12 +91,12 @@
     <parent link="${name}_link" />
     <child link="${name}_right_finger_link" />
     <axis xyz="1 0 0" />
-    <limit effort="16" lower="0.0" upper="0.045" velocity="0.05" />
+    <limit effort="16" lower="-0.001" upper="0.045" velocity="0.05" />
     <calibration rising="0.0" />
     <dynamics damping="80" friction="2.0"/>
     <safety_controller k_position="20"
                        k_velocity="20"
-                       soft_lower_limit="${0.0 + gripper_eps}"
+                       soft_lower_limit="${0.0 - gripper_eps}"
                        soft_upper_limit="${0.045 - gripper_eps}" />
   </joint>
 
@@ -131,12 +131,12 @@
     <parent link="${name}_link" />
     <child link="${name}_left_finger_link" />
     <axis xyz="-1 0 0" />
-    <limit effort="16" lower="0" upper="0.045" velocity="0.05" />
+    <limit effort="16" lower="-0.001" upper="0.045" velocity="0.05" />
     <calibration rising="0.0" />
     <dynamics damping="80" friction="2.0"/>
     <safety_controller k_position="20"
                        k_velocity="20"
-                       soft_lower_limit="${0.0 + gripper_eps}"
+                       soft_lower_limit="${0.0 - gripper_eps}"
                        soft_upper_limit="${0.045 - gripper_eps}" />
   </joint>
 
